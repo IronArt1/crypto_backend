@@ -1,5 +1,7 @@
 For deploying docker run:
 sudo docker compose up -d
+OR
+docker compose up -d
 
 For some reasons the following command now can't be run in the Dockerfile:
 RUN echo "127.0.0.1 www.my.crypto.com my.crypto.com" >> /etc/hosts
@@ -9,6 +11,8 @@ sudo docker exec -u root -it mycryptocom-webserver-1 bash
 
 and put in /etc/hosts the line:
 127.0.0.1 www.my.crypto.com my.crypto.com
+
+composer install
 
 bin/console doctrine:schema:create
 
