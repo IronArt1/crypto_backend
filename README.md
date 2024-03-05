@@ -1,3 +1,12 @@
+For testing purposes:
+$ cd /var/www/my.crypto.com/
+$ sudo chmod -R 777 my.crypto.com/var
+$ sudo chmod -R 775 my.crypto.com
+$ sudo systemctl start docker
+$ sudo docker compose up
+$ sudo curl -X POST 127.0.0.1:8086/data/processing
+
+*********
 For deploying docker run:
 sudo docker compose up -d
 
